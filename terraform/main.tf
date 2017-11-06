@@ -26,6 +26,7 @@ variable "ec2_instance_size" {}
 # keypair
 variable "runit_executeable" {}
 variable "identity_location" {}
+variable "public_key" {}
 
 # EXISTING RESOURCES
 variable "subnet_id" {}

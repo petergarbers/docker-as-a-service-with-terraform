@@ -17,7 +17,7 @@ State storage is configured on files `terraform.backend.development`. Create new
 
 The following commands expect that you have configure an AWS cli profile named `myprofile` with admin access to the target AWS account.
 
-* Execute `rm .terraform/*; terraform init -backend-config=terraform.backend.development`
+* Execute ` cd terraform; rm .terraform/*; terraform init -backend-config=terraform.backend.development`
 
 ## Use Terraform
 * Dry-run with `terraform plan`
@@ -28,3 +28,8 @@ The following commands expect that you have configure an AWS cli profile named `
 * If the state for a new project or environment is stored on a different bucket, you need to change bucket, region and profile too.
 * Create a proper `terraform.tfvars` by copying `terraform.tfvars.example`
 * Init the state
+
+## SSH
+
+In order to do provisioning on the instance you create, do not forget to modify your `identity_location` and `public_key` inside of your `terraform.tfvars`.
+
