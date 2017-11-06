@@ -1,0 +1,4 @@
+bucket  = "my-terraform-bucket"
+key     = "env/my-project/terraform.tfstate"
+region  = "us-east-1"
+profile = "myprofile"

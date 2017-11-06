@@ -1,0 +1,13 @@
+appname = "myapp"
+prefix = "development"
+profile = "myprofile"
+region = "us-west-2"
+
+identity_location = "/Users/yourname/.ssh/identity" # Your ssh key
+nginx_executeable = "/Users/yourname/workspace/docker-as-a-service/nginx.sh"
+
+subnet_id = "subnet-mydefaultsubnet"
+vpc_id = "vpc-mydefaultvpc"
+
+ec2_ami_id = "ami-ecc63a94" # us-west-2
+ec2_instance_size = "t2.micro"
